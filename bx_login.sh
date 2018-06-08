@@ -6,7 +6,9 @@ fi
 if [ -z $CF_SPACE ]; then
   CF_SPACE="$BLUEMIX_SPACE"
 fi
-
+echo user: "$BLUEMIX_USER"
+echo API Key: "$BLUEMIX_API_KEY"
+echo Account: "$BLUEMIX_ACCOUNT"
 
 if [ -z "$BLUEMIX_USER" ] || [ -z "$BLUEMIX_API_KEY" ] || [ -z "$BLUEMIX_ACCOUNT" ]; then
   echo "Define all required environment variables and rerun the stage."
